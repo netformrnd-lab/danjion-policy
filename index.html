@@ -17,42 +17,50 @@
     max-width: 600px;
     margin: 0 auto;
     background: #fff;
-    border-radius: 12px;
+    border-radius: 16px;
     padding: 32px 24px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
   }
-  .logo {
+  .logo-wrap {
     text-align: center;
     margin-bottom: 32px;
   }
-  .logo-circle {
-    width: 64px;
-    height: 64px;
-    border-radius: 16px;
-    background: #39c69f;
-    color: #fff;
+  .logo-box {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 12px;
+    width: 88px;
+    height: 88px;
+    border-radius: 20px;
+    background: #39c69f;
+    margin-bottom: 16px;
+    box-shadow: 0 6px 16px rgba(57, 198, 159, 0.25);
+  }
+  .logo-text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    font-family: "Pretendard", -apple-system, sans-serif;
   }
   h1 {
     font-size: 22px;
     margin-bottom: 4px;
+    color: #1a1a1a;
+    font-weight: 800;
   }
   .subtitle {
     color: #888;
     font-size: 13px;
   }
   h2 {
-    font-size: 14px;
-    color: #666;
-    margin-top: 24px;
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 28px;
     margin-bottom: 12px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    font-weight: 700;
   }
   .doc-list {
     list-style: none;
@@ -61,30 +69,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 16px 18px;
     border: 1px solid #eee;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 8px;
     text-decoration: none;
     color: #1a1a1a;
     transition: all 0.15s;
+    background: #fff;
   }
   .doc-list a:hover {
     border-color: #39c69f;
     background: #f0fdf9;
+    transform: translateY(-1px);
   }
   .doc-title {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
   }
   .doc-arrow {
     color: #ccc;
-    font-size: 14px;
+    font-size: 16px;
   }
   .doc-list .disabled {
     color: #ccc;
     cursor: not-allowed;
     pointer-events: none;
+    background: #fafafa;
   }
   .doc-list .disabled .doc-title::after {
     content: " (준비 중)";
@@ -99,6 +110,11 @@
     text-align: center;
     color: #888;
     font-size: 12px;
+    line-height: 1.7;
+  }
+  .footer strong {
+    color: #1a1a1a;
+    font-weight: 700;
   }
 </style>
 </head>
@@ -106,8 +122,10 @@
 
 <div class="container">
 
-  <div class="logo">
-    <div class="logo-circle">단지온</div>
+  <div class="logo-wrap">
+    <div class="logo-box">
+      <span class="logo-text">DANJION</span>
+    </div>
     <h1>약관 및 정책</h1>
     <div class="subtitle">단지온 서비스 관련 법적 고지</div>
   </div>
